@@ -40,4 +40,3 @@ private:
 	iter beg;
 	iter end;
 };
-
