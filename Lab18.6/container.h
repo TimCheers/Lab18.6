@@ -5,7 +5,7 @@ class iter
 {
 	friend class container;
 public:
-	iter() { lin = 0; }
+	iter() { lin = nullptr; }
 	iter(const iter& it) { lin = it.lin; }
 	bool operator ==(const iter& it) { return lin == it.lin; }
 	bool operator !=(const iter& it) { return !(lin == it.lin); }

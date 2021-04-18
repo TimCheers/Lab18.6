@@ -1,7 +1,7 @@
 #include "container.h"
 #include <iostream>
 using namespace std;
-container :: container(int size)
+container::container(int size)
 {
 	this->size = size;
 	data = new int[size];
@@ -30,12 +30,12 @@ container::~container()
 }
 container& container::operator = (const container& obj)
 {
-	if (this==&obj)
+	if (this == &obj)
 	{
 		return *this;
 	}
 	this->size = obj.size;
-	if (data!=0)
+	if (data != 0)
 	{
 		delete[]data;
 	}
