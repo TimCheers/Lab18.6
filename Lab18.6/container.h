@@ -23,6 +23,7 @@ private:
 class container
 {
 public:
+	container() { size = 0; data = nullptr; }
 	container(int size);
 	container(const container& obj);
 	~container();
